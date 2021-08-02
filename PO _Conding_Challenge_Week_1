@@ -1,0 +1,58 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("hello");
+        problem1("Minneapolis","Minnesota");
+        
+        int[] prob2 = {0,-10,8,4,2,6};
+        problem2(prob2);
+     }
+     
+     
+     private static int problem1(String t, String d){
+        /*Given two Strings A and B. Find the length of the Longest Common Subsequence (LCS) of the given Strings. Input: A = Minneapolis, B = Minnesota.*/
+        char[] A = t.toCharArray();
+        char[] B = d.toCharArray();
+        
+        int len = 0;
+        if(A.length <= B.length){
+            len = A.length;
+        }else{
+            len = B.length;
+        }
+        
+        int result =0;
+        int cur =0;
+        for(int i=0; i<len; i++){
+            if(A[i] == B[i]){
+                cur++;
+            }
+            if(cur>result){
+                result = cur;
+            }
+        }
+        return result;
+     }
+     
+     private static void problem2(int[] arr){
+         /*Write java Program to Find Smallest and Largest Element in an Array.
+            Note: Number can not be repeated in the array.*/
+        int smallest=arr[0];
+        int largest=arr[0];
+        for(int i=0; i<arr.length; i++){
+            if(smallest>arr[i]){
+                smallest = arr[i];
+            }
+            if(largest<arr[i]){
+                largest = arr[i];
+            }
+        }
+        System.out.println("Smallest: "+ smallest);
+        System.out.println("Largest: "+ largest);
+     }
+     
+     private static void problem3(){
+        // Q1C7A1B2F3A1B7E4
+     }
+}
