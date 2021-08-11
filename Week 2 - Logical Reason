@@ -1,0 +1,11 @@
+The statement in part (I) is only give us the last day of the month and we do not have enough information to determine what the start day is and how many days we have in that month.
+So answer (a) is not sufficient enough to to give us the answer
+
+The statement in part (II) give us what the start day is but not how many day we have for that month. So ansawer (b) is not sufficient enough to to give us the answer.
+
+Therefore, answer (c) is not correct either.
+
+However, by combinging the two statement, we know that the third Saturday is 17th days and we cannot have more than 31 days -> the 4rd Saturday would be 24 -> 28th day
+would be Wednesday, and the next Wed days is 32th day -> this month has 28 days and the 
+Hence, the 14th day would be Wednesday (middle of the month).
+=> answer(e) is the correct answer
