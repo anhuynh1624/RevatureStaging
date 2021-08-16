@@ -1,0 +1,31 @@
+function bucketize(s, n) {
+  let words = s.split(" ");
+  let prev = words[0];
+  let result = [];
+  if (s.length < n) {
+    return result;
+  } 
+  else {
+    for (let i = 1; i < words.length; i++) {
+      if (prev.length + words[i].length <= n-1) {
+        let temp = prev + " " + words[i];
+        prev = temp;
+      } else {
+        result.push(prev);
+        prev = words[i];
+      }
+
+      if (i === words.length - 1) {
+        result.push(prev);
+      }
+    }
+    return result;
+  }
+}
+
+//let re = bucketize("the mouse jumped over the cheese", 7);
+//let re = bucketize("she sells sea shells by the sea", 10);
+//let re = bucketize("fairy dust coated the air", 20);
+let re = bucketize("a b c d e", 2);
+
+console.log(re);
